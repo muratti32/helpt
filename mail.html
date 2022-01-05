@@ -1,0 +1,375 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #e5e5e5;
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+        color: #4db748;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 15px;
+        text-align: center;
+      }
+
+      #signature {
+        margin: 50px 0;
+      }
+
+      #wrapper {
+        background-color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+      }
+
+      #logo {
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+      }
+
+      #logo-td {
+        position: relative;
+      }
+
+      .wide-table {
+        width: 100%;
+      }
+
+      #main {
+        margin-top: 5%;
+      }
+
+      #table-footer {
+        background-color: #f6f6f6;
+        width: 100%;
+        padding-top: 30px;
+      }
+
+      #footer-text {
+        text-align: center;
+        padding-bottom: 5%;
+      }
+
+      .footer-links {
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" id="wrapper">
+      <tbody>
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td id="logo-td">
+                    <img src="https://helpt-app-staging.s3.amazonaws.com/30cedc-Mask%20Group%20verify.png" />
+                    <img id="logo" src="https://helpt-app-staging.s3.amazonaws.com/74979d-Frame.png" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="wide-table" id="main">
+              <tbody>
+                <tr align="center">
+                  <td>
+                    <img src="https://helpt-app-staging.s3.amazonaws.com/ce6dca-Bell.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1>${notification_name}</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2>${title}</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><a href="https://helptwebsite.newbird.co/activeBid/673">Open app for more details</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 id="signature">The Helpt Team</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="table-footer">
+              <tbody>
+                <tr>
+                  <td>
+                    <table class="wide-table">
+                      <tbody>
+                        <tr align="center">
+                          <td>
+                            <img
+                              src="https://helpt-app-staging.s3.amazonaws.com/5f6d31-facebook%20-%20FontAwesome.png"
+                            />
+                            <img
+                              src="https://helpt-app-staging.s3.amazonaws.com/366fad-twitter%20-%20FontAwesome.png"
+                            />
+                            <img
+                              src="https://helpt-app-staging.s3.amazonaws.com/a9c5b0-instagram%20-%20FontAwesome%20Copy.png"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="wide-table">
+                      <tbody>
+                        <tr align="center">
+                          <td>
+                            <a href="" class="footer-links">Terms of Use</a> |
+                            <a href="" class="footer-links">Privacy Policy</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p id="footer-text">© 2020 Helpt®. All Rights Reserved.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+` } private get_verify_email_html_template({name, callback_url}: { name: string, callback_url: string }) { return `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #e5e5e5;
+        font-size: 15px;
+      }
+
+      #wrapper {
+        background-color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 100vh;
+      }
+
+      #main-text {
+        margin: 20px 40px;
+      }
+
+      h1 {
+        font-size: 30px;
+        color: #4db748;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      #table-footer {
+        background-color: #f6f6f6;
+        width: 100%;
+        padding-top: 30px;
+      }
+
+      #footer-text {
+        text-align: center;
+        padding-bottom: 5%;
+      }
+
+      .footer-links {
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .btn {
+        background-color: #4db748;
+        color: #fff;
+        text-decoration: none !important;
+        font-size: 13px;
+        border-radius: 4px;
+        font-weight: 600;
+        text-align: center;
+        padding: 12px 80px;
+      }
+
+      .btn strong {
+        color: #fff;
+      }
+
+      .data-centered {
+        padding: 40px 0 50px 0;
+        text-align: center;
+      }
+
+      .wide-table {
+        width: 100%;
+      }
+
+      #logo {
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+      }
+
+      #logo-td {
+        position: relative;
+      }
+
+      #main-table {
+        margin-top: 30px;
+        margin-bottom: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" id="wrapper">
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td id="logo-td">
+                <img src="https://helpt-app-staging.s3.amazonaws.com/30cedc-Mask%20Group%20verify.png" />
+                <img id="logo" src="https://helpt-app-staging.s3.amazonaws.com/74979d-Frame.png" />
+              </td>
+            </tr>
+          </table>
+          <table class="wide-table" id="main-table">
+            <tr align="center">
+              <td>
+                <img src="https://helpt-app-staging.s3.amazonaws.com/67a85b-fi_mail.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1>Welcome</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>We’ll just need you to verify your email address.</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="main-text">
+                  Hi ${name},<br />
+                  <br />
+                  We’re so glad to have you join us! Whether you plan on being a client who is looking for help or a
+                  helper yourself, we hope you enjoy our useful app.<br />
+                  <br />
+                  In order to get full access to what Helpt® has to offer, please verify your email address by clicking
+                  the button below.<br />
+                  <br />
+                  Thanks for your time, <br />
+
+                  <strong>The Helpt® Team</strong>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td onclick="window.location='${callback_url}'" class="data-centered">
+                <a href="${callback_url}" class="btn"><strong>VERIFY MY EMAIL</strong></a>
+              </td>
+            </tr>
+          </table>
+          <table id="table-footer">
+            <tr>
+              <td>
+                <table class="wide-table">
+                  <tr align="center">
+                    <td>
+                      <img src="https://helpt-app-staging.s3.amazonaws.com/5f6d31-facebook%20-%20FontAwesome.png" />
+                      <img src="https://helpt-app-staging.s3.amazonaws.com/366fad-twitter%20-%20FontAwesome.png" />
+                      <img
+                        src="https://helpt-app-staging.s3.amazonaws.com/a9c5b0-instagram%20-%20FontAwesome%20Copy.png"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <table class="wide-table">
+                  <tr align="center">
+                    <td>
+                      <a href class="footer-links">Terms of Use</a> | <a href class="footer-links">Privacy Policy</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p id="footer-text">© 2020 Helpt®. All Rights Reserved.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
